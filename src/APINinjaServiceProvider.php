@@ -18,13 +18,15 @@ class APINinjaServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('api-ninja')
-            ->hasConfigFile()
-            ->hasCommand(APINinjaCommand::class)
+            ->hasConfigFile('apininja')
+            ->hasCommand(APINinjaCommand::class);
+            /*
             ->hasInstallCommand(function(InstallCommand $command) {
                 $command
                     ->publishConfigFile()
                     ->copyAndRegisterServiceProviderInApp()
                     ->askToStarRepoOnGitHub('bataboom/APINinja');
             });
+            */
     }
 }
