@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace BataBoom\APINinja\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class APINinjaCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'apininja';
 
     public $description = 'My command';
 
